@@ -1,0 +1,9 @@
+{
+  "name": "office-break-2",
+  "version": "0.0.1",
+  "description": "Local real time multiplayer socket IO game",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.5.1"
+  }
+}

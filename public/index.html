@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Office Break 2</title>
+
+	<!-- Bootstrap minified CSS CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<!-- Login block -->
+	<div id="login" class="valign container">
+		<div class="text-center row" style="padding-bottom: 200px;">
+			<h1>
+				My name is
+			</h1>
+			<input type="text" maxlength="12" class="form-control input-lg" id="player-name" placeholder="Name">
+			<div style="padding: 10px">
+				<span id="refresh-name" class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+			</div>
+			<span class="help-block" style="color: rgba(243,74,74,.6);">
+				*Make it within <strong>12</strong> letters, so we can remember you.
+			</span>
+			<button id="join-game-btn" type="button" class="btn btn-default btn-lg" disabled>JOIN GAME</button>
+		</div>
+	</div>
+
+	<div id="game-wrapper" class="fluid-container"></div>
+
+	<!-- Scripts -->
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	
+	<!-- Bootstrap minified JS CDN -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Phaser minified JS CDN -->
+	<script src="//cdn.jsdelivr.net/phaser/2.6.2/phaser.min.js"></script>
+	
+	<script src="js/names.js"></script>
+	<script src="js/game.js"></script>
+</body>
+</html>
